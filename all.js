@@ -89,7 +89,7 @@ function render() {
   listRecord.innerHTML = str;
 
   //計算BMI的平均值
-  averageBMI = (totalBMI / reposInfo.length).toFixed(2);
+  averageBMI = reposInfo.length === 0 ? '0' : (totalBMI / reposInfo.length).toFixed(2);
   average.innerHTML = `
   <div>總共測量 
   ${reposInfo.length} 次
