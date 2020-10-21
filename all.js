@@ -13,7 +13,6 @@ let pBMI = "";
 let pRecord = {};
 let reposInfo = [];
 
-
 let BMIData = {
   "overThin": {
     class: "blue",
@@ -128,13 +127,13 @@ function calBMI() {
     status: ''
   }
   //先判斷輸入的值是否正確
-  if (pHeight === "" || pHeight === 0) {
+  if (!pHeight || !pWeight || pHeight === "0" || pWeight === "0") {
     alert('請填入身高');
     inputHeight.value = '';
     inputWeight.value = '';
     return;
-  } else if (pWeight === " " || pWeight === 0) {
-    alert('請填入體重');
+  } else if (pHeight === pWeight) {
+    alert('你身高跟體重一樣嗎？');
     inputHeight.value = '';
     inputWeight.value = '';
     return;
