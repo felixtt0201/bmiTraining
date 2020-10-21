@@ -178,7 +178,7 @@ btnSubmit.addEventListener('click', calBMI);
 //刪除單筆資料
 listRecord.addEventListener('click',
   function (e) {
-    if (e.target.nodeName == "I") {
+    if (e.target.nodeName === "I") {
       let getId = e.target.dataset.id;
       swal({
         title: "您確定要刪除？",
@@ -186,7 +186,7 @@ listRecord.addEventListener('click',
         buttons: true,
         dangerMode: true
       }).then((value) => {
-        if (value == true) {
+        if (value === true) {
           deleteData(getId)
         }
       });
@@ -202,7 +202,7 @@ function deleteAll() {
     buttons: true,
     dangerMode: true
   }).then((value) => {
-    if (value == true) {
+    if (value === true) {
       reposInfo.forEach(i => {
         deleteData(i.id)
       })
