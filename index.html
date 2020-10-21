@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js'></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+  <link rel="stylesheet" href="dist/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>大ＡＩ數據之ＢＭＩ體重計</h1>
+    <div class="wrap">
+      <div class="row">
+        <label for="height">身高 cm</label>
+        <input type="number" class="height" placeholder="請輸入身高">
+      </div>
+      <div class="row">
+        <label for="weight">體重 kg</label>
+        <input type="number" class="weigth" placeholder="請輸入體重">
+      </div>
+      <button class="btn submit" id="submit">確認</button>
+      <button class="btn reset" id="reset">全部清除</button>
+    </div>
+    <div class="result">
+      <h2>BMI 紀錄</h2>
+      <div class="bmirecord"></div>
+      <ul class="list">
+      </ul>
+    </div>
+  </div>
+  <script src="/all.js"></script>
+</body>
+
+</html>

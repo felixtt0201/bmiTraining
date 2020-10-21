@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, a
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ����� border box */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.red {
+  color: #d63031;
+  border: 1px solid #d63031 !important;
+}
+
+.blue {
+  color: #341f97;
+  border: 1px solid #341f97 !important;
+}
+
+.orange {
+  color: #ff9f43;
+  border: 1px solid #ff9f43 !important;
+}
+
+.gray {
+  color: #222f3e;
+  border: 1px solid #222f3e !important;
+}
+
+.green {
+  color: #10ac84;
+  border: 1px solid #10ac84 !important;
+}
+
+.yellow {
+  color: #feca57;
+  border: 1px solid #feca57 !important;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: #3d82ad;
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.container .wrap {
+  width: 100%;
+  margin: 0 auto;
+  background: #3d82ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+}
+
+.container .wrap .row {
+  margin-bottom: 20px;
+}
+
+.container .wrap .row label {
+  margin: 10px 0;
+  display: block;
+}
+
+.container .wrap .row input {
+  width: 100%;
+  font-size: 20px;
+  padding: 8px;
+  color: #336d91;
+  border: 1px solid #b1d7fb;
+  border-radius: 4px;
+}
+
+.container .wrap .row input:focus {
+  outline: none;
+}
+
+.container .wrap .btn {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #b1d7fb;
+  color: #ffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .wrap .btn:focus {
+  outline: none;
+}
+
+.container .wrap .btn.submit {
+  background-color: #77b3d7;
+}
+
+.container .wrap .btn.reset {
+  background-color: #3d82ad;
+}
+
+.container .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .result h2 {
+  color: #3d82ad;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.container .result h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .result li {
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.container .result li .record {
+  margin: 10px 300px;
+  line-height: 2em;
+}
+
+.container .result li .record li {
+  border: none;
+}
+
+.list {
+  position: relative;
+}
+
+.fa-trash-alt {
+  left: 15px;
+  top: 20;
+  position: absolute;
+  cursor: pointer;
+}
+/*# sourceMappingURL=all.css.map */
